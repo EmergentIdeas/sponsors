@@ -1,0 +1,26 @@
+{
+  "name": "@dankolz/sponsors",
+  "version": "1.0.0",
+  "description": "GUI for tracking sponsors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmergentIdeas/sponsors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmergentIdeas/sponsors/issues"
+  },
+  "homepage": "https://github.com/EmergentIdeas/sponsors#readme",
+  "dependencies": {
+    "dreck": "^1.0.15",
+    "ei-pic-browser": "^1.0.10",
+    "sortablejs": "^1.14.0",
+    "webhandle": "^1.0.26",
+    "webhandle-users": "^1.0.5"
+  }
+}
