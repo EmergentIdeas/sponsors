@@ -1,0 +1,13 @@
+
+
+<div class="ei-css-grid">
+	<label class="t12" class="name-label">
+		Name
+		<input name="name" type="text" />
+	</label>
+	<label class="t12" class="details-label">
+		Details
+		<textarea name="details" class="ckeditor" ></textarea>
+	</label>
+
+</div>

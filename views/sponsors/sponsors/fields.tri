@@ -26,6 +26,12 @@
 		<textarea name="desc" ></textarea>
 	</label>
 	
+	<div class="t6">
+		<div class="">
+			Sponsor groups 
+		</div>
+		__groups::./group-check-option__
+	</div>
 	<label class="t6" class="website-label">
 		Website
 		<input name="website" type="text" />

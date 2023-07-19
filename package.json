@@ -1,6 +1,6 @@
 {
   "name": "@dankolz/sponsors",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "GUI for tracking sponsors",
   "main": "index.js",
   "scripts": {
@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/EmergentIdeas/sponsors#readme",
   "dependencies": {
-    "dreck": "^1.0.15",
+    "@dankolz/mongodb-data-service": "^1.0.6",
+    "dreck": "^1.0.19",
     "ei-pic-browser": "^1.0.10",
+    "filter-log": "^0.0.8",
     "sortablejs": "^1.14.0",
     "webhandle": "^1.0.26",
     "webhandle-users": "^1.0.5"

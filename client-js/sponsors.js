@@ -1,8 +1,13 @@
 var sortable = require('sortablejs')
+if(!sortable.create && sortable.default) {
+    sortable = sortable.default
+}
+
+
 /**
  * Expects markup in the form of:
  * <div class="ei-editable-sortable-tiles">
- * 		<ul class="tiles" data-sort-url="/sponsors/sort">
+ * 		<ul class="tiles" data-sort-url="/admin/sponsors/sort">
  * 			<li class="tile" data-id="e0e5e574-4709-48d9-8df1-167af79f4b1e"> <!-- Where the value of data-id is database identifier of the object represented by the tile -->
  * 				<!-- Some markup here which displays the information about the tile -->
  * 

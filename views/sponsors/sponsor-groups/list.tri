@@ -1,0 +1,21 @@
+
+__::$pretemplate__
+
+
+<h2>Sponsor Groups</h2>
+<a href="__dreck.createUrl__">Add Sponsor Group</a>
+<table class="listing">
+	<tr>
+		<th>
+			Name
+		</th>
+		<th>
+			
+		</th>
+	</tr>
+	__focus::./list-row__
+</table>
+
+<a href="__dreck.createUrl__">Add Sponsor Group</a>
+
+__::$posttemplate__
