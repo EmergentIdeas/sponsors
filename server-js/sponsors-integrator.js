@@ -57,7 +57,7 @@ let integrate = function (dbName, options) {
 				res.locals.sponsors = await webhandle.services.sponsors.fetch(res.locals.page.sponsors)
 			}
 			if (res.locals.page.sponsorsByGroup) {
-				res.locals.sponsors = await webhandle.services.sponsors.fetch({group: res.locals.page.sponsorsByGroup})
+				res.locals.sponsors = await webhandle.services.sponsors.fetch({groups: res.locals.page.sponsorsByGroup})
 			}
 			if(res.locals.sponsors) {
 				res.locals.sponsors.sort(({sortOrder: one = 0}, {sortOrder: two = 0}) => {

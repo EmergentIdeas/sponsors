@@ -1,6 +1,6 @@
 {
   "name": "@dankolz/sponsors",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "GUI for tracking sponsors",
   "main": "index.js",
   "scripts": {
