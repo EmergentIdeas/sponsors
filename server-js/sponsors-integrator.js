@@ -5,6 +5,7 @@ const path = require('path')
 const MongoDataService = require('@dankolz/mongodb-data-service')
 const SponsorsDreck = require('./sponsors-dreck')
 const SponsorGroupsDreck = require('./sponsor-groups-dreck')
+const sponsorsPrerun = require('./properties-page-prerun')
 
 const filog = require('filter-log')
 let log = filog('sponsors-integrator:')
@@ -95,10 +96,15 @@ let integrate = function (dbName, options) {
 	webhandle.routers.primary.use(opt.groupsMountPoint, securedRouter)
 
 
+	// add templates
 	if (opt.templateDir) {
 		webhandle.addTemplateDir(path.join(webhandle.projectRoot, opt.templateDir))
 	}
-
+	
+	// add for page properties
+	if(webhandle.services.pageEditor.pagePropertiesPrerun) {
+		webhandle.services.pageEditor.pagePropertiesPrerun.push(sponsorsPrerun)
+	}
 
 }
 

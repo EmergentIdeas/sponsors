@@ -1,0 +1,9 @@
+
+<label >
+	Load sponsors from group
+	<select name="sponsorsByGroup">
+		<option value="">none</option>
+		__sponsorGroups::./sponsor-group-option__
+		
+	</select>
+</label>
